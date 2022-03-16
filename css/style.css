@@ -562,6 +562,70 @@ header .company_logo {
     transition: 0.4s;
 }
 
+.group_details {
+    padding: 50px 0;
+    background: #2e2e36;
+}
+
+.group_details .main-gr {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.group_details h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 70px;
+    position: relative;
+    text-align: center;
+}
+
+.group_details h2::before {
+    position: absolute;
+    content: '';
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    width: 90px;
+    height: 2px;
+    bottom: -10px;
+}
+
+.group_details .main-gr .left {
+    width: 45%;
+}
+
+.group_details .main-gr .right {
+    width: 55%;
+}
+
+.group_details .main-gr .right p {
+    font-size: 16px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.group_details ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.group_details ul li {
+    color: #fff;
+    padding: 10px 0;
+    line-height: 24px;
+    font-size: 14px;
+    border-bottom: 1px solid rgb(66, 66, 66);
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+.group_details ul li:last-child {
+    border-bottom: 0;
+}
+
 .testimon {
     padding: 50px 0 70px;
     background: #ffffff;
@@ -692,6 +756,31 @@ footer .main-foo {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+footer .main-foo .right {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .main-foo .right p {
+    margin-left: 20px;
+}
+
+.disclaimer {
+    padding: 20px 0;
+    background: #09959f;
+    color: #fff;
+    text-align: center;
+}
+
+.disclaimer p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.disclaimer p strong {
+    font-size: 20px;
 }
 
 .popup {
