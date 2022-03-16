@@ -328,6 +328,24 @@ header .company_logo {
     box-shadow: 0 0 25px rgba(77, 77, 77, 0.438) inset;
 }
 
+.invisalign {
+    padding: 50px 0;
+}
+
+.invisalign .main-in {
+    display: flex;
+}
+
+.invisalign .main-in .left {
+    width: 55%;
+}
+
+.invisalign .main-in .right {
+    width: 40%;
+}
+
+.invisalign .main-in .right {}
+
 
 /*  Our services*/
 
