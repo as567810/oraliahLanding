@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -328,23 +329,96 @@ header .company_logo {
     box-shadow: 0 0 25px rgba(77, 77, 77, 0.438) inset;
 }
 
+.invisalign h2 {
+    text-align: center;
+    color: #2e2f34;
+    font-size: 36px;
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+
 .invisalign {
     padding: 50px 0;
 }
 
 .invisalign .main-in {
     display: flex;
+    justify-content: center;
+    max-width: 900px;
+    margin: auto;
 }
 
 .invisalign .main-in .left {
     width: 55%;
 }
 
+.invisalign .main-in .left p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #2e2d35;
+    line-height: 26px;
+    padding-right: 70px;
+    text-align: justify;
+}
+
 .invisalign .main-in .right {
     width: 40%;
 }
 
-.invisalign .main-in .right {}
+.invisalign .main-in .right ul {
+    padding-left: 50px;
+}
+
+.invisalign .main-in .right ul li {
+    color: #0c8ea6;
+    line-height: 28px;
+    font-size: 18px;
+    position: relative;
+}
+
+.invisalign .main-in .right ul li::before {
+    position: absolute;
+    content: "➤";
+    left: -27px;
+    top: 50%;
+    transform: translateY(-50%);
+    font: normal normal normal 14px/1 FontAwesome;
+}
+
+.teeth-sec {
+    padding: 50px 0;
+    background-color: #98e7ec;
+}
+
+.teeth-sec .head {
+    position: relative;
+    text-align: center;
+    padding-bottom: 12px;
+    margin-bottom: 40px;
+}
+
+.teeth-sec .head::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 2px;
+    background-color: #138f97;
+}
+
+.teeth-sec .head h2 {
+    color: #25292c;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.teeth-sec .teeth-img {
+    width: 80%;
+    margin: auto;
+}
 
 
 /*  Our services*/
@@ -592,7 +666,7 @@ header .company_logo {
 }
 
 .group_details h2 {
-    color: #fff;
+    color: #09959f;
     font-size: 40px;
     font-weight: 400;
     margin-bottom: 70px;
