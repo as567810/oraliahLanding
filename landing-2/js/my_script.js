@@ -177,18 +177,24 @@ $(document).ready(function() {
         spaceBetween: 100,
         loop: true,
         freeMode: false,
-        autoPlay: true,
+        autoPlay: false,
         speed: 1000,
-        autoplay: {
-            delay: 3300,
-            disableOnInteraction: false,
+        // autoplay: {
+        //     delay: 3300,
+        //     disableOnInteraction: false,
 
-        },
+        // },
 
         pagination: {
             el: ".testimon .swiper-pagination",
             clickable: true,
         },
+        breakpoints: {
+            500: {
+                slidesPerView: 1,
+            },
+
+        }
 
     });
 
