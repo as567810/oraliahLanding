@@ -1,3 +1,24 @@
+function showerrorpro(mydiv, erromsg) {
+    $(mydiv).css({ border: '1px solid red ', color: '#222', background: '#e1e1e1' });
+    // $("html, body").animate({ scrollTop: $(mydiv).offset().top - 150 }, 500);
+    // $(mydiv).focus();
+    if (erromsg !== '') {
+        $(mydiv).after('<span class="show-error-msg">' + erromsg + '</span>');
+    }
+}
+
+function showsuccesspro(mydiv) {
+    $(mydiv).css({ border: '1px solid #D7D7D7', background: '#e9eaec', color: '#222' });
+    $('.show-error-msg').remove();
+}
+function ValidateEmail(email) {
+    var expr = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+    return expr.test(email);
+};
+
+
+   
+
 function innernavscroll() {
 
     if ($(document).scrollTop() > $('.banner').offset().top - 120) {
@@ -53,6 +74,22 @@ $(".cl_form").click(function() {
 // navigation
 
 $(document).ready(function() {
+
+    $('.phone,input[name=phone]').keydown(function(event) {
+        // Allow special chars + arrows 
+        if (event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9 ||
+            event.keyCode == 27 || event.keyCode == 13 ||
+            (event.keyCode == 65 && event.ctrlKey === true) ||
+            (event.keyCode >= 35 && event.keyCode <= 39)) {
+            return;
+        } else {
+            // If it's not a number stop the keypress
+            if (event.shiftKey || (event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 96 || event.keyCode > 105)) {
+                event.preventDefault();
+            }
+        }
+    });
+    
     $('.mob-nav-btn').click(function() {
         $('.mob-nav').fadeIn();
     });
@@ -75,20 +112,20 @@ $(document).ready(function() {
     });
 
 
-    $('#cl_form').click(function() {
-        $('.popup').fadeIn();
-    })
-    $('.close').click(function() {
-        $('.popup').fadeOut()
-    })
+    // $('#cl_form').click(function() {
+    //     $('.popup').fadeIn();
+    // })
+    // $('.close').click(function() {
+    //     $('.popup').fadeOut()
+    // })
 
-    $('.popup').click(function() {
-        $('.popup').fadeOut();
-        e.stopPropagation()
-    })
-    $('.pop-in').click(function(e) {
-        e.stopPropagation()
-    })
+    // $('.popup').click(function() {
+    //     $('.popup').fadeOut();
+    //     e.stopPropagation()
+    // })
+    // $('.pop-in').click(function(e) {
+    //     e.stopPropagation()
+    // })
     if (screen.width < 767) {
         $(".nav-ul").click(function() {
             $(".mob-nav").fadeOut();
@@ -287,15 +324,45 @@ $(document).ready(function() {
     $('.popup-alert .pop-in p').click(function(e) {
         e.stopPropagation();
     })
-    $('.cl_close').click(function() {
-            $('.popup-alert').fadeOut();
-        })
+    // $('.cl_close').click(function() {
+    //         $('.popup-alert').fadeOut();
+    //     })
         // $('.cl_form_pop_sess').click(function(e){
         //     e.preventDefault();
         // })
-    $('.cl_form_work').click(function() {
-        alert('Currently Form is not working');
+    // $('.cl_form_work').click(function() {
+    //     alert('Currently Form is not working');
+    // });
+
+    $('.cl_form_submit').click(function() {
+        var name = $('.name').val();
+        var phone = $('.phone').val();
+        var email = $('.email').val();
+
+        if (name === "") {
+            showerrorpro(".name", 'Name is required');
+            return false;
+        } else {
+            showsuccesspro(".name");
+        }
+        if (phone.length < 10) {
+            showerrorpro(".phone", 'Please enter valid phone number');
+            return false;
+        } else {
+            showsuccesspro(".phone");
+        }
+        if (!ValidateEmail(email)) {
+            showerrorpro(".email", 'Please enter valid email ID');
+            return false;
+        } else {
+            showsuccesspro(".email");
+        }
+        
+        $(this).hide()
+        $('.loader').show('');
+    
     });
+
 
 
 

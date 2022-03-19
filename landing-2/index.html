@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,21 +48,22 @@
                     </div>
                     <div class="right wow fadeInRightBig" data-wow-delay="300ms">
                         <div class="form-main">
-                            <form action="">
+                            <form action="thanks.php" method="post">
+                                <input type="hidden" name="action" value="send_query">
                                 <div class="form-inn">
                                     <span>Name</span>
-                                    <input type="text" name="" placeholder="" id="">
+                                    <input type="text" class="name" name="name" placeholder="" id="">
                                 </div>
                                 <div class="form-inn">
                                     <span>Phone</span>
-                                    <input type="text" name="" placeholder="" id="">
+                                    <input type="text" class="phone" name="phone" placeholder="" id="">
                                 </div>
                                 <div class="form-inn">
                                     <span>E-mail</span>
-                                    <input type="text" name="" placeholder="" id="">
+                                    <input type="text" class="email" name="email" placeholder="" id="">
                                 </div>
                                 <div class="form-inn">
-                                    <button type="button" class="btn-co lef" id="cl_form">Register Now</button>
+                                    <button type="submit" class="btn-co lef cl_form_submit" id="cl_form">Register Now</button>
                                 </div>
                             </form>
                         </div>
