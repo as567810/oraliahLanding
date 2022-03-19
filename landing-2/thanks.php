@@ -48,6 +48,8 @@ send_mail('Oraliah Form','mohddsultaan@gmail.com',$mess, 'Oraliah Enquiry Form')
     <p><span class="para">We appreciate you contacting Oraliah</span> <br>
       One of our colleagues will be in touch with you soon!
       Have a great day! </p>
+      <p class="para2">Need help? Call us:- 9538400333<br>
+Email:- shazaan@oraliah.com</p>
 
     <div class="clearfix"></div>
   </div>
