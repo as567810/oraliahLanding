@@ -118,9 +118,11 @@ section {
     transition: 0.4s;
     color: #fff;
 } */
-.colo-gre{
+
+.colo-gre {
     color: #09959f;
 }
+
 .overlap {
     width: 100%;
     height: 100vh;
@@ -327,23 +329,27 @@ header .company_logo {
     font-size: 12px;
     padding-left: 5px;
 }
-.form-main .form-inn .show-error-msg{
+
+.form-main .form-inn .show-error-msg {
     position: absolute;
     z-index: 7;
     color: red;
     bottom: -23px;
 }
+
 .form-main .form-inn input:focus {
     outline: none;
     box-shadow: 0 0 25px rgba(77, 77, 77, 0.438) inset;
 }
-.main_inner .left video{
+
+.main_inner .left video {
     width: 420px;
     height: 300px;
     border: 1px solid #ccc;
     border-radius: 12px;
     box-shadow: 0 10px 18px #00000061;
 }
+
 .invisalign h2 {
     text-align: center;
     color: #2e2f34;
@@ -389,6 +395,7 @@ header .company_logo {
     line-height: 28px;
     font-size: 18px;
     position: relative;
+    margin-top: 12px;
 }
 
 .invisalign .main-in .right ul li::before {
@@ -434,9 +441,23 @@ header .company_logo {
     width: 80%;
     margin: auto;
 }
-.teeth-sec .teeth-img img{
+
+.teeth-sec .teeth-img img {
     width: 100%;
 }
+
+.teeth-sec p {
+    font-size: 20px;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.teeth-sec p span {
+    font-weight: 700;
+}
+
 
 /*  Our services*/
 
@@ -845,7 +866,8 @@ header .company_logo {
     line-height: 45px;
     letter-spacing: 1px;
 }
-.reg-now h2 .my-cl{
+
+.reg-now h2 .my-cl {
     display: block;
 }
 
@@ -934,48 +956,54 @@ footer .main-foo .right p {
     text-align: center;
     font-size: 16px;
 }
+
 .thankyou {
-	width:700px;
-	margin:50px auto;
-	background:#fff;
-	box-shadow:2px 2px 10px rgba(0,0,0,.5);
-	text-align:center;
-	padding-bottom:50px;
+    width: 700px;
+    margin: 50px auto;
+    background: #fff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
+    text-align: center;
+    padding-bottom: 50px;
 }
+
 .thankyou h1 {
-	text-transform:uppercase;
-	color:#37c1fd;
+    text-transform: uppercase;
+    color: #37c1fd;
     font-size: 20px;
 }
+
 .thankyou p {
-	border-top:1px dotted #ccc;
-	margin-top:25px;
-	padding-top:10px;
+    border-top: 1px dotted #ccc;
+    margin-top: 25px;
+    padding-top: 10px;
     font-size: 14px;
     font-weight: 600;
-    
 }
-.thankyou .para{
+
+.thankyou .para {
     font-size: 20px;
 }
-.thankyou .para2{
+
+.thankyou .para2 {
     font-size: 15px;
     font-weight: 500;
 }
+
 .thankarea {
-	width:100%;
-	float:left;
-	background:#0c8ea6;
-	padding:50px 0;
-	margin-bottom:50px;
+    width: 100%;
+    float: left;
+    background: #0c8ea6;
+    padding: 50px 0;
+    margin-bottom: 50px;
 }
+
 .thankarea .fa {
-	background:#fff;
-	width:150px;
-	font-size:90px;
-	color:#0c8ea6;
-	border-radius:100%;
-	line-height:150px;
+    background: #fff;
+    width: 150px;
+    font-size: 90px;
+    color: #0c8ea6;
+    border-radius: 100%;
+    line-height: 150px;
 }
 
 
@@ -994,12 +1022,11 @@ footer .main-foo .right p {
     .container {
         width: 920px;
     }
-    
-    .group_details .main-gr .left{
+    .group_details .main-gr .left {
         width: 100%;
-    text-align: center;
+        text-align: center;
     }
-    .group_details .main-gr .right{
+    .group_details .main-gr .right {
         width: 100%;
     }
     .main_inner .swiper-button-next {
@@ -1008,7 +1035,6 @@ footer .main-foo .right p {
     .main_inner .swiper-button-prev {
         left: 43.5%;
     }
-   
 }
 
 
@@ -1018,10 +1044,10 @@ footer .main-foo .right p {
     .container {
         width: 740px;
     }
-    .form-main .form-inn input{
+    .form-main .form-inn input {
         width: 100%;
     }
-    .main_inner .right .form-main .form-inn .btn-co{
+    .main_inner .right .form-main .form-inn .btn-co {
         width: 100%;
     }
     .main_inner .swiper-button-next {
@@ -1030,28 +1056,28 @@ footer .main-foo .right p {
     .main_inner .swiper-button-prev {
         left: 42%;
     }
-    .invisalign .main-in .left p{
+    .invisalign .main-in .left p {
         padding-right: 9px;
         font-size: 16px;
     }
-    .invisalign .main-in .right ul li{
+    .invisalign .main-in .right ul li {
         font-size: 16px;
     }
-    .about .main-d .right p{
+    .about .main-d .right p {
         font-size: 14px;
         line-height: 27px;
     }
-    .about .main-d .right{
+    .about .main-d .right {
         margin-left: 3%;
     }
-    .group_details .main-gr .left{
+    .group_details .main-gr .left {
         width: 100%;
-    text-align: center;
+        text-align: center;
     }
-    .group_details .main-gr .right{
+    .group_details .main-gr .right {
         width: 100%;
     }
-    .reg-now h2{
+    .reg-now h2 {
         line-height: 43px;
         font-size: 28px;
     }
@@ -1071,22 +1097,22 @@ footer .main-foo .right p {
         width: 90%;
         padding: 0;
     }
-    .main_inner .right{
+    .main_inner .right {
         width: 100%;
     }
-    .form-main .form-inn input{
+    .form-main .form-inn input {
         width: 100%;
     }
-    .main_inner .left{
+    .main_inner .left {
         width: 100%;
     }
-    .main_inner .left img{
+    .main_inner .left img {
         width: 100%;
     }
-    .main_inner p{
+    .main_inner p {
         margin-top: 14px;
         font-size: 14px;
-        line-height: 25px; 
+        line-height: 25px;
     }
     .main_inner .swiper-button-next {
         right: 41%;
@@ -1094,123 +1120,125 @@ footer .main-foo .right p {
     .main_inner .swiper-button-prev {
         left: 41%;
     }
-    .main_inner p span{
+    .main_inner p span {
         display: unset;
     }
-    .invisalign{
+    .invisalign {
         padding: 20px 0;
     }
     .invisalign .main-in .left,
-    .invisalign .main-in .right{
+    .invisalign .main-in .right {
         width: 100%;
     }
-    .invisalign .main-in{
+    .invisalign .main-in {
         flex-direction: column;
     }
-    .invisalign .main-in .right ul{
+    .invisalign .main-in .right ul {
         padding-left: 28px;
         margin-top: 10px;
     }
-    .invisalign h2{
+    .invisalign h2 {
         margin-bottom: 10px;
         font-size: 22px;
     }
-    .invisalign .main-in .left p{
+    .invisalign .main-in .left p {
         padding-right: 0;
         line-height: 23px;
         font-size: 14px;
     }
-    .common_heading_main{
+    .common_heading_main {
         font-size: 22px;
     }
-    .btn-co{
+    .btn-co {
         width: 100%;
     }
-    .invisalign .main-in .right ul li{
+    .invisalign .main-in .right ul li {
         font-size: 14px;
     }
-
-    .teeth-sec{
+    .teeth-sec {
         padding: 20px 0;
     }
-    .teeth-sec .head h2{
+    .teeth-sec .head h2 {
         font-size: 25px;
     }
-    .teeth-sec .head::before{
+    .teeth-sec .head::before {
         width: 60px;
     }
-    .teeth-sec .head{
+    .teeth-sec .head {
         margin-bottom: 10px;
     }
-    .about .main-d{
+    .teeth-sec p {
+        font-size: 14px;
+    }
+    .about .main-d {
         flex-direction: column;
     }
-    .about .main-d .left{
+    .about .main-d .left {
         width: 100%;
     }
-    .about .main-d .right{
+    .about .main-d .right {
         width: 100%;
     }
-    .about{
+    .about {
         padding: 20px 0;
     }
-    .about .main-d .right p{
+    .about .main-d .right p {
         margin-top: 10px;
         font-size: 14px;
         line-height: 22px;
     }
-    .group_details h2{
+    .group_details h2 {
         margin-bottom: 40px;
     }
-    .group_details .main-gr .left{
+    .group_details .main-gr .left {
         width: 100%;
-    text-align: center;
+        text-align: center;
     }
-    .group_details .main-gr .right{
-        width: 100%;
-    }
-    .testi{
+    .group_details .main-gr .right {
         width: 100%;
     }
-    .welcome .welc{
+    .testi {
         width: 100%;
     }
-    .welcome .welc ul.list li::before{
+    .welcome .welc {
+        width: 100%;
+    }
+    .welcome .welc ul.list li::before {
         background-size: 79%;
     }
-    .welcome .welc ul.list li{
+    .welcome .welc ul.list li {
         font-size: 14px;
         padding: 5px 0;
     }
-    .welcome .welc .head h2{
+    .welcome .welc .head h2 {
         font-size: 20px;
     }
-    .welcome .welc ul.list{
+    .welcome .welc ul.list {
         padding-top: 10px;
     }
-    .welcome{
+    .welcome {
         padding: 20px 0;
     }
-    .reg-now h2{
+    .reg-now h2 {
         font-size: 20px;
         line-height: 34px;
     }
-    .reg-now h2 .my-cl{
+    .reg-now h2 .my-cl {
         display: unset;
     }
-    .reg-now{
+    .reg-now {
         padding: 20px 0;
     }
-    .disclaimer p{
+    .disclaimer p {
         font-size: 14px;
     }
-    footer .main-foo .right p{
+    footer .main-foo .right p {
         font-size: 10px;
     }
     .thankyou {
         width: 80%;
     }
-    .main_inner .left video{
+    .main_inner .left video {
         width: 100%;
     }
 }
