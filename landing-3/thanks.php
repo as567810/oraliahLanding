@@ -1,10 +1,22 @@
-<?php include('../../echronpanel/lib/dbconf.php');?>
+<?php //include('../../echronpanel/lib/dbconf.php');?>
 <?php
-if($_POST['action']=="send_query") {
 
-    $name        =   mysql_real_escape_string($_POST["name"]);
-    $phone       =   mysql_real_escape_string($_POST["phone"]);
-    $email       =   mysql_real_escape_string($_POST["email"]);
+
+function send_mail_smtp($message, $to, $subject) {
+  $headers = "From: info@oraliahdental.com" . "\r\n";
+  $headers .= "MIME-Version: 1.0" . "\r\n";
+  $headers .= "X-Priority: 3\r\n";
+  $headers .= "X-Mailer: smail-PHP " . phpversion() . "\r\n";
+  $headers .= "Content-type: text/html; charset=iso-8859-1" . "\r\n";
+  $success = mail($to, $subject, $message, $headers);
+  return $success;
+}
+if($_POST['action']=="send_query") {
+  
+
+    $name        =   $_POST["name"];
+    $phone       =   $_POST["phone"];
+    $email       =   $_POST["email"];
 
     $mess= "<table width='96%' cellspacing='0' cellpadding='2' border='0'><tr><td> Oraliah<br/><br/></td></tr>
     <tr><td>You have received an enquiry. Details of which are as follows: <br /><br />";
@@ -16,7 +28,7 @@ if($_POST['action']=="send_query") {
   $mess.= "Thanks<br>Team<br>Oraliah Aligners </strong></td></tr>
   </table>";
 
-send_mail('Oraliah Form','mohddsultaan@gmail.com',$mess, 'Oraliah Enquiry Form');
+  send_mail_smtp($mess, 'mohddsultaan@gmail.com', 'Oraliah Landing2');
 
 }
 ?>
